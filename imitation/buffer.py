@@ -328,7 +328,7 @@ if __name__=="__main__":
             buffer.append(state, action, reward, done)
     
     indices = buffer.make_indices(horizon=25)
-    import pdb; pdb.set_trace()
+    # import pdb; pdb.set_trace()
     print(len(indices))
     states, actions = buffer.sample(batch_size=256, horizon=25)
     print(states.shape)

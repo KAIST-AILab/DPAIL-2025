@@ -1,5 +1,5 @@
 # DPAIL
-Code for DPAIL: Training Diffusion Policy for Adversarial Imitation Learning without Policy Optimization
+Code for DPAIL: Training Diffusion Policy for Adversarial Imitation Learning without Policy Optimization (Accepted in NeurIPS 2025, [link](https://openreview.net/pdf?id=F2ILoE1eDj))
 
 ## Setup Instructions
 To use this code, you need the following versions of Python and PyTorch:

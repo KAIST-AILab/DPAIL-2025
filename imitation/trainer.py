@@ -21,11 +21,11 @@ class Trainer:
                  eval_interval=10**3, num_eval_episodes=5):
         super().__init__()
 
-        # Env to collect samples.
+        # Env to collect samples
         self.env = env
         # self.env.seed(seed)
 
-        # Env for evaluation.
+        # Env for evaluation
         self.env_test = env_test
         # self.env_test.seed(2**31-seed)
 
@@ -34,14 +34,14 @@ class Trainer:
         self.log_dir = log_dir
         self.one_step_control = one_step_control
 
-        # Log setting.
+        # Log setting
         self.summary_dir = os.path.join(log_dir, 'summary')
         # self.writer = SummaryWriter(log_dir=self.summary_dir)
         self.model_dir = os.path.join(log_dir, 'model')
         if not os.path.exists(self.model_dir):
             os.makedirs(self.model_dir)
 
-        # Other parameters.
+        # Other parameters
         self.num_steps = num_steps
         self.eval_interval = eval_interval
         self.num_eval_episodes = num_eval_episodes
